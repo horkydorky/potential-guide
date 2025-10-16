@@ -1,0 +1,134 @@
+/* --- Global Reset & Base Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 1. Set the dark background color */
+  background-color: #1c1c1c; 
+  
+  /* 2. Create the starry effect with multiple background layers */
+  background-image: 
+    /* Small, dense stars */
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+    /* Larger, sparser stars */
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 
+    50px 50px, /* Density for the first layer */
+    150px 150px; /* Density for the second layer */
+  background-position: 
+    0 0, 
+    75px 75px; /* Offset the second layer to avoid a grid look */
+  
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  padding: 2rem;
+  min-height: 100vh;
+
+  /* --- THIS IS THE CENTERING LOGIC --- */
+  display: flex;
+  /* Horizontally center the container */
+  justify-content: center;
+  /* Vertically center the container */
+  align-items: center; 
+}
+
+
+/* --- Layout --- */
+.container {
+  max-width: 650px;
+  width: 100%;
+  /* Center all the text inside the container */
+  text-align: center;
+}
+
+/* --- Typography --- */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p.bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  /* Increase margin to create space before the links/buttons */
+  margin-bottom: 2.5rem; 
+}
+
+/* --- Links --- */
+a {
+  color: #e0e0e0;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* --- Reach Out Section (Styled as Buttons) --- */
+.reach-out {
+  margin-top: 2rem;
+}
+
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  /* Center the links themselves within the flex container */
+  justify-content: center;
+}
+
+/* Style links to look like the button in the image */
+.links-list a {
+  display: inline-block;
+  border: 2px solid #e0e0e0;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.links-list a:hover {
+  background-color: #e0e0e0;
+  color: #1c1c1c;
+  opacity: 1; /* Override the general link hover opacity */
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  p.bio {
+    font-size: 1rem;
+  }
+  
+  /* On small screens, stack the links vertically */
+  .links-list {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; /* Center the stacked buttons */
+  }
+}

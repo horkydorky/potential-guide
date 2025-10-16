@@ -5,20 +5,40 @@
   padding: 0;
 }
 
+/* --- Animation for the background --- */
+@keyframes move-stars {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  to {
+    /* Move each layer at a different speed for a parallax effect */
+    background-position: -500px 250px, -300px 150px, -100px 50px;
+  }
+}
+
 body {
-  background-color: #121111; /* true black background */
+  background-color: #111; /* A very dark charcoal, slightly softer than pure black */
   
-  /* layered starry background */
+  /* 3-layer starry background for a more natural, random look */
   background-image: 
+    /* Layer 1: Tiny, sparse stars */
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 0.8px, transparent 1px),
+    /* Layer 2: Medium density stars */
     radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
-  background-size: 50px 50px, 150px 150px;
-  background-position: 0 0, 75px 75px;
-  
-  color: #e0e0e0;
+    /* Layer 3: Faint, larger area stars */
+    radial-gradient(circle, rgba(255, 255, 255, 0.5) 0.8px, transparent 1px);
+
+  background-size: 
+    250px 250px, /* Large distance between sparse stars */
+    150px 150px, /* Medium distance */
+    50px 50px;    /* Small distance for dense stars */
+
+  /* Apply the animation */
+  animation: move-stars 150s linear infinite;
+
+  color: #ccc; /* Slightly softer white for text */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
-  margin: 0;
   padding: 2rem;
   min-height: 100vh;
 
@@ -36,35 +56,42 @@ body {
 
 /* --- Typography --- */
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem; /* Reduced margin */
+  font-family: "Times New Roman", Times, serif; /* A classic serif font */
+  font-style: italic; /* Make the name italic */
+  font-weight: 400; /* Regular weight, not bold */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0; /* Make the name slightly brighter */
 }
 
 h2 {
-  font-size: 1.1rem;
-  margin-top: 2.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+  color: #aaa;
 }
 
 p.bio {
   font-size: 1.05rem;
   line-height: 1.8;
-  /* Increase margin to create space before the links/buttons */
   margin-bottom: 2.5rem; 
 }
 
 /* --- Links --- */
 a {
-  color: #e0e0e0;
+  color: #ccc;
   text-decoration: underline;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  opacity: 0.8;
+  color: #fff; /* Brighten on hover instead of changing opacity */
 }
 
-/* --- Reach Out Section (Styled as Buttons) --- */
+/* --- Reach Out Section --- */
 .reach-out {
   margin-top: 2rem;
 }
@@ -72,60 +99,36 @@ a:hover {
 .links-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem; /* Increased gap for better spacing */
   list-style: none;
-  /* Center the links themselves within the flex container */
   justify-content: center;
 }
 
-/* Style links to look like the button in the image */
+/* Reverted links to simple text, removing button styles */
 .links-list a {
-  display: inline-block;
-  border: 2px solid #e0e0e0;
-  padding: 0.5rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-decoration: underline;
+  text-transform: none; /* No more uppercase */
+  font-weight: normal;
+  border: none; /* Removed border */
+  padding: 0; /* Removed padding */
+  letter-spacing: normal;
 }
 
 .links-list a:hover {
-  background-color: #e0e0e0;
-  color: #1c1c1c;
-  opacity: 1; /* Override the general link hover opacity */
+  background-color: transparent; /* Ensure no background on hover */
+  color: #fff;
 }
 
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
-  body {
-    padding: 1.5rem;
-  }
-
-  .container {
-    max-width: 100%;
-  }
-
   h1 {
-    font-size: 1.9rem;
-  }
-
-  p.bio {
-    font-size: 1rem;
+    font-size: 2.1rem;
   }
   
-  /* On small screens, stack the links vertically */
   .links-list {
     flex-direction: column;
-    gap: 1rem;
-    align-items: center; /* Center the stacked buttons */
+    gap: 0.8rem;
+    align-items: center;
   }
-}
-@keyframes twinkle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
-}
-
-body {
-  animation: twinkle 5s ease-in-out infinite alternate;
 }

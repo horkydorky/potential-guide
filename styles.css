@@ -34,7 +34,7 @@ body {
     50px 50px;    /* Small distance for dense stars */
 
   /* Apply the animation */
-  animation: move-stars 150s linear infinite;
+  animation: move-stars 100s  infinite;
 
   color: #ccc; /* Slightly softer white for text */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

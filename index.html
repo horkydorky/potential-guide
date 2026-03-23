@@ -3,27 +3,403 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yachana Adhikari - Portfolio</title>
+  <meta name="description" content="Yachana Adhikari - Final Year Computer Science Student specializing in Machine Learning and Data Science">
+  <meta name="author" content="Yachana Adhikari">
+  <title>Yachana Adhikari | ML & Data Science Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="container">
-    <h1>Yachana Adhikari</h1>
-    <p class="bio">
-      I'm a machine learning enthusiast from Nepal with a deep passion for Data Science and Machine Learning.
-      I love transforming complex problems into elegant solutions and building impactful projects with code.
-      I'm actively looking to collaborate on Machine Learning & Deep Learning projects.
-    </p>
+  <!-- Top Banner -->
+  <div class="top-banner">
+    🎓 Open to internships and collaboration opportunities! <a href="#contact">Say Hi!</a>
+  </div>
 
-    <section class="reach-out">
-      <h2>Reach Out</h2>
-      <ul class="links-list">
-        <li><a href="mailto:adhikariyachana2@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/yayya/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/horkydorky" target="_blank">Github</a></li>
-        <li><a href="cvv.pdf" target="_blank">Resume</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Yachana
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#journey" class="nav-link">My Journey</a></li>
+        <li><a href="#professional" class="nav-link">Professional</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#publications" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    </section>
-  </main>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-greeting">Hi 👋, I'm Yachana Adhikari</h1>
+          <p class="hero-tagline">Problem Solver | ML Enthusiast</p>
+          <p class="hero-description">
+            Passionate about building scalable applications and solving complex problems through 
+            technology, data science, and AI.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Say Hi! 👋</a>
+            <a href="cvv.pdf" target="_blank" class="btn btn-secondary">Resume 📄</a>
+          </div>
+        </div>
+        <div class="hero-illustration">
+          <div class="illustration-placeholder">
+            <div class="avatar-circle">👩‍💻</div>
+            <div class="coffee-icon">☕</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links Bar -->
+  <div class="social-bar">
+    <a href="https://github.com/horkydorky" target="_blank" title="GitHub">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/yayya/" target="_blank" title="LinkedIn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    </a>
+    <a href="mailto:adhikariyachana2@gmail.com" title="Email">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content-wrapper">
+        <div class="profile-photo-placeholder">
+          <div class="profile-circle">👤</div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a final year Computer Science student from Nepal with a deep passion for Machine Learning 
+            and Data Science. I love transforming complex problems into elegant solutions and building 
+            impactful projects with code.
+          </p>
+          <p>
+            Currently exploring cutting-edge ML techniques, building predictive models, and contributing 
+            to research in artificial intelligence. I'm actively looking to collaborate on Machine Learning 
+            & Deep Learning projects.
+          </p>
+          <div class="profile-buttons">
+            <a href="#" class="profile-btn">Academic Profile</a>
+            <a href="#" class="profile-btn">Research Profile</a>
+            <a href="#" class="profile-btn">Professional Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Journey Section -->
+  <section class="section journey-section" id="journey">
+    <div class="container">
+      <h2 class="section-title">My Journey</h2>
+      <p class="section-subtitle">A brief summary of my life and experiences so far</p>
+      
+      <!-- Journey Tabs -->
+      <div class="journey-tabs">
+        <button class="journey-tab active" data-tab="education">
+          <span class="tab-icon">🎓</span>
+          <span class="tab-label">Education</span>
+        </button>
+        <button class="journey-tab" data-tab="experience">
+          <span class="tab-icon">💼</span>
+          <span class="tab-label">Experience</span>
+        </button>
+        <button class="journey-tab" data-tab="awards">
+          <span class="tab-icon">🏆</span>
+          <span class="tab-label">Awards</span>
+        </button>
+        <button class="journey-tab" data-tab="certificates">
+          <span class="tab-icon">📜</span>
+          <span class="tab-label">Certificates</span>
+        </button>
+      </div>
+
+      <!-- Journey Content -->
+      <div class="journey-content">
+        <!-- Education Tab -->
+        <div class="journey-panel active" id="education">
+          <div class="journey-card">
+            <div class="journey-logo">🎓</div>
+            <div class="journey-details">
+              <h3 class="journey-title">Tribhuwan University</h3>
+              <p class="journey-degree">BS in Computer Science and Information Technology | Sept 2022 – November 2026</p>
+              <ul class="journey-list">
+                <li>Coursework: Artificial Intelligence, Neural Networks, System Design, Software Engineering, Computer Architecture, ASP.net, Compiler Design, Computational Theory, Advanced Calculus</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div class="journey-panel" id="experience">
+          <div class="journey-card">
+            <div class="journey-logo">💼</div>
+            <div class="journey-details">
+              <h3 class="journey-title">Fusemachines Fellowship</h3>
+              <p class="journey-degree">Microdegree™ in Artificial Intelligence | 2025</p>
+              <ul class="journey-list">
+                <li><a href="https://s3.amazonaws.com/fuseclassroom-resources-prod/student-certificates/Microdegree%E2%84%A2+in+Artificial+Intelligence+2025-YACHANA+ADHIKARI.pdf" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">View Certificate →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards Tab -->
+        <div class="journey-panel" id="awards">
+          <div class="journey-card">
+            <div class="journey-logo">🏆</div>
+            <div class="journey-details">
+              <h3 class="journey-title">[Award Name]</h3>
+              <p class="journey-degree">[Organization] | [Year]</p>
+              <p class="journey-description">Description of the award and achievement</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificates Tab -->
+        <div class="journey-panel" id="certificates">
+          <div class="journey-card">
+            <div class="journey-logo">📜</div>
+            <div class="journey-details">
+              <h3 class="journey-title">[Certificate Name 1]</h3>
+              <p class="journey-degree">[Issuing Organization] | [Month Year]</p>
+              <a href="#" target="_blank" class="certificate-link">View Certificate →</a>
+            </div>
+          </div>
+          <div class="journey-card">
+            <div class="journey-logo">📜</div>
+            <div class="journey-details">
+              <h3 class="journey-title">[Certificate Name 2]</h3>
+              <p class="journey-degree">[Issuing Organization] | [Month Year]</p>
+              <a href="#" target="_blank" class="certificate-link">View Certificate →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section professional-section" id="professional">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="journey-content" style="margin-top: 30px; display: block;">
+        <div class="journey-card">
+          <div class="journey-logo">💼</div>
+          <div class="journey-details">
+            <h3 class="journey-title">AI Fellow | Fusemachines</h3>
+            <p class="journey-degree">Jun 2025 - Nov 2025</p>
+            <ul class="journey-list">
+              <li>Built a news recommender web app ; CNNs and NLP; applied feature engineering, model tuning, and evaluation with Python (NumPy, Scikit-learn, PyTorch). Gained hands-on experience in responsible AI, bias mitigation, and technical presentations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects 💻</h2>
+      
+      <div class="projects-showcase">
+        <!-- Project 1 -->
+        <div class="project-showcase-card">
+          <div class="project-image-wrapper">
+            <div class="project-image-placeholder">
+              <span class="project-placeholder-icon">🌍</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-showcase-title">Multilingual Machine Translation</h3>
+            <p class="project-showcase-description">
+              A comprehensive machine translation application built with Streamlit. It leverages sequence-to-sequence models to provide accurate translations across multiple languages seamlessly. Containerized with Docker and prepared for deployment.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">Docker</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://translation-app-nbw6vicem5nrqtxbzedf9p.streamlit.app/" target="_blank" class="btn-demo">View Demo 🚀</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-showcase-card">
+          <div class="project-image-wrapper">
+            <div class="project-image-placeholder">
+              <span class="project-placeholder-icon">📈</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-showcase-title">Business Insights AI</h3>
+            <p class="project-showcase-description">
+              An AI-powered data analytics platform that helps businesses uncover actionable insights from their data. The application processes complex datasets to generate intelligent visualizations based on predictive analytics.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Data Science</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://business-insights-ai.streamlit.app/" target="_blank" class="btn-demo">View Demo 🚀</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-showcase-card">
+          <div class="project-image-wrapper">
+            <div class="project-image-placeholder">
+              <span class="project-placeholder-icon">⚖️</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-showcase-title">MyPocketLawyer</h3>
+            <p class="project-showcase-description">
+              An intelligent legal assistant backend built to ingest, process, and query legal documents. Designed with data ingestion pipelines and deployed on scalable cloud infrastructure to power AI-driven legal consultations.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Backend</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Railway</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://mypocketlawyer-production-18dd.up.railway.app/" target="_blank" class="btn-demo">Link 🚀</a>
+              <a href="lawyer.mp4" target="_blank" class="btn-demo" style="background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); margin-left: 10px;">Play Video 🎥</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-showcase-card">
+          <div class="project-image-wrapper">
+            <div class="project-image-placeholder">
+              <span class="project-placeholder-icon">📰</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-showcase-title">Khabar Saramsha</h3>
+            <p class="project-showcase-description">
+              An intelligent news summarization tool generating concise and accurate summaries.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">NLP</span>
+            </div>
+            <div class="project-actions">
+              <a href="intro-khabar-saramsha.mp4" target="_blank" class="btn-demo">Play Video 🎥</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section publications-section" id="publications">
+    <div class="container">
+      <h2 class="section-title">My Research 🔬</h2>
+      
+      <div class="research-grid">
+        <!-- Research Paper 1 -->
+        <div class="research-card">
+          <div class="research-image-wrapper">
+            <div class="research-image-placeholder">
+              <span class="research-placeholder-icon">📄</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3 class="research-title">Dual-Engine Patient Similarity for Clinical Decision Support</h3>
+            <div class="research-actions" style="margin-top: 15px;">
+              <a href="https://doi.org/10.5281/zenodo.18734998" target="_blank" class="btn-read">DOI: 10.5281/zenodo.18734998 📖</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Paper 2 -->
+        <div class="research-card">
+          <div class="research-image-wrapper">
+            <div class="research-image-placeholder">
+              <span class="research-placeholder-icon">📄</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3 class="research-title">Generative-Discriminative Data Augmentation for Low-Resource Information Extraction: An Empirical Study on Nepali</h3>
+            <div class="research-actions" style="margin-top: 15px;">
+              <a href="https://doi.org/10.5281/zenodo.18735115" target="_blank" class="btn-read">DOI: 10.5281/zenodo.18735115 📖</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Feel free to reach out. I'll try my best to get back to you soon.</p>
+      
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Yachana Adhikari. Built with passion</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
